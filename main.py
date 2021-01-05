@@ -21,7 +21,8 @@ from Apps.FeedReader import FeedReader
 sh.addProcess(FeedReader.FeedReader(sh.process))
 
 #! If you run the framework on a PC and you want to see the feed reader application,
-#! comment the following line
+#! comment sh.killProcess('App.FeedReader')
+#! If there is any app or service you think should not be running, kill it in a similar way.
 sh.killProcess('App.FeedReader')
 
 
