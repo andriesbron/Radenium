@@ -31,5 +31,5 @@ See in the main.py how you can instantiate your app in the framework.
 
 
 ## Architectural Rules
--Apps have a User Interface, Services Not
--Use boot level to initialize your app, check existing apps and services
+- Apps have a User Interface, Services Not
+- Use boot level to initialize your app, check existing apps and services
