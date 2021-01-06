@@ -1,35 +1,35 @@
 # Radenium
 
-Radenium requires
+Radenium requires:
+
 - Python 3
 - MicroWebSrv2
 
 Radenium is a very lightweight IOT framework build for Micropython (WiPy) using MicroWebSrv2, however, you can run it on every machine that runs Python 3.
-
-Take notice that this is prototype software, it works, however, not everything is complete.
+This is prototype software, it works, however, not everything is complete.
 
 
 # Why use it at all?
 
-The only reason to use it is that you will be able to write in a very quick way an app having a web user interface. Check out the apps and the services.
+The only reason to use Radenium is that you will be able to quickly write an app having a web user interface. No need to download to check that out, browse to Apps/Thermostat or Apps/Feedreader and see how simple the structure is. These apps also work to a certain extend, they are not perfect or complete like the thermostat, however, you get the idea.
 
 
 # Installation
 
-Add the MicroWebSrv2 directory to the Radenium root directory so that this applies: MicroWebSrv2/MicroWebSrv2.py
+Download MicroWebSrv2 or my fork of it and add the directory MicroWebSrv2 to the Radenium root directory so that this applies: MicroWebSrv2/MicroWebSrv2.py
 If you want to use SSL certificates, add that directory as well to the root of Radenium.
 
-There is a log saying to connect with Radenium via 0.0.0.0:8080, however, normally that should be the microwebsrv2 address which I think was 0.0.0.0:88888.
+Upon launching Radenium a log tells you to connect with Radenium via 0.0.0.0:8080, however, that is my local install, you, most likely, will have to point your browser to 0.0.0.0:88888.
 
-Radenium hooks in on MicroWebSrv2. If you get that running, Radenium runs as well. You might recognize the MicroWebSrv2 structure in the main.py.
+Or do it the other way around, try first to get MicroWebSrv2 running, next, add Radenium to the structure and overwrite the main.py from MicroWebSrv2 with the main.py from Radenium and it should work right away. If you compare the main.py's you recognize the structure.
 
 
 # Writing your own apps and services
 
 Radenium is written linear, so, if you make a script that blocks the program counter, everything is waiting for your app to have done what it is doing. None blocking code is something you need to solve in your own app.
-See in the main.py how you can instantiate your app in the framework.
+See in the main.py how you can instantiate your app in the framework and get a web user interface.
 
 
 ## Architectural Rules
-- Apps have a User Interface, Services Not
+- Apps have a User Interface, services do not have an user interface
 - Use boot level to initialize your app, check existing apps and services
