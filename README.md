@@ -21,7 +21,7 @@ If you want to use SSL certificates, add that directory as well to the root of R
 
 Upon launching Radenium a log tells you to connect with Radenium via 0.0.0.0:8080, however, that is my local install, you, most likely, will have to point your browser to 0.0.0.0:88888.
 
-Or do it the other way around, try first to get MicroWebSrv2 running, next, add Radenium to the structure and overwrite the main.py from MicroWebSrv2 with the main.py from Radenium and it should work right away. If you compare the main.py's you recognize the structure.
+Or do it the other way around, try first to get MicroWebSrv2 running, next, add Radenium to the structure and overwrite the main.py of MicroWebSrv2 with the main.py from Radenium and it should work right away. If you compare the main.py's you recognize the structure.
 
 
 # Writing your own apps and services
