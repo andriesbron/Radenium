@@ -11,7 +11,7 @@ This is prototype software, it works, however, not everything is complete.
 
 # Why use it at all?
 
-The only reason to use Radenium is that you will be able to quickly write an app having a web user interface. No need to download to check that out, browse to Apps/Thermostat or Apps/Feedreader and see how simple the structure is. These apps also work to a certain extend, they are not perfect or complete like the thermostat, however, you get the idea.
+The only reason to use Radenium is that you will be able to quickly write an app having a web user interface. No need to download to check that out, browse to Apps/Thermostat or Apps/Feedreader and see how simple the structure is. Note that the thermostat app is only the interface to increase and lower a set temperature. I am waiting for somebody adding a relais somehow so that I can have my own thermostat using Wipy. 
 
 
 # Installation
